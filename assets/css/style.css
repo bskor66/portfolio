@@ -1,3 +1,9 @@
+:root {
+	--spacing: 40px;
+	--card-radius: 20px;
+	--content-padding: 20px;
+}
+
 *,
 *::before,
 *::after {
@@ -7,17 +13,17 @@
 }
 
 body {
-	padding: 20px;
+	padding: var(--content-padding);
 	background-color: grey;
 	display: flex;
 	flex-flow: column nowrap;
-	gap: 20px;
+	gap: var(--spacing);
 }
 
 main {
 	display: flex;
 	flex-flow: row wrap;
-	gap: 20px;
+	gap: var(--spacing);
 	justify-content: space-between;
 }
 
@@ -25,16 +31,16 @@ main {
 	display: flex;
 	flex-flow: column nowrap;
 	flex-grow: 1;
-	gap: 20px;
+	gap: var(--spacing);
 }
 
 .card {
 	background-color: transparent;
 	flex-grow: 1;
 	color: black;
-	padding: 20px;
+	padding: var(--content-padding);
 	border: solid 2px black;
-	border-radius: 20px;
+	border-radius: var(--card-radius);
 	min-width: 200px;
 	aspect-ratio: 1;
 }
@@ -47,15 +53,15 @@ nav {
 	background-color: transparent;
 	flex-grow: 1;
 	color: black;
-	padding: 20px;
+	padding: var(--content-padding);
 	border: solid 2px black;
-	border-radius: 20px;
+	border-radius: var(--card-radius);
 }
 
 nav ul {
 	list-style-type: none;
 	display: flex;
-	gap: 20px;
+	gap: var(--spacing);
 	justify-content: center;
 	align-items: center;
 	flex-flow: row wrap;
