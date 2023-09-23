@@ -2,6 +2,13 @@
 	--spacing: 40px;
 	--card-radius: 20px;
 	--content-padding: 20px;
+	--gradient-fallback: rgb(195, 165, 215);
+	--gradient: linear-gradient(
+		117deg,
+		rgba(195, 165, 215, 1) 0%,
+		rgba(240, 107, 107, 1) 50%,
+		rgba(217, 189, 151, 1) 100%
+	);
 }
 
 *,
@@ -14,7 +21,8 @@
 
 body {
 	padding: var(--spacing);
-	background-color: grey;
+	background: var(--gradient-fallback);
+	background: var(--gradient);
 	display: flex;
 	flex-flow: column nowrap;
 	margin: 0 auto;
@@ -43,7 +51,6 @@ main {
 	padding: var(--content-padding);
 	border: solid 2px black;
 	border-radius: var(--card-radius);
-	aspect-ratio: 1;
 }
 
 .half {
@@ -105,6 +112,7 @@ nav a {
 	nav li {
 		flex-basis: 100%;
 	}
+
 	.column {
 		flex-basis: 100%;
 	}
