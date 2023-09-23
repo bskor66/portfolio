@@ -6,11 +6,27 @@
 	padding: 0;
 }
 
-nav {
-	background-color: blue;
+body {
 	padding: 20px;
-	display: block;
+}
+
+main {
+	display: flex;
+	flex-flow: row wrap;
+	gap: 20px;
+}
+
+.card {
+	background-color: white;
+	color: black;
+	padding: 20px;
+	border: solid 2px black;
+	border-radius: 20px;
+}
+
+nav {
 	text-align: center;
+	flex-basis: 100%;
 }
 
 nav ul {
@@ -32,4 +48,10 @@ nav ul li {
 
 nav a {
 	display: block;
+}
+
+@media screen and (max-width: 768px) {
+	nav li {
+		flex-basis: 100%;
+	}
 }
