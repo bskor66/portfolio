@@ -8,12 +8,22 @@
 
 nav {
 	background-color: blue;
+	padding: 20px;
+	display: block;
+	text-align: center;
 }
 
 nav ul {
 	list-style-type: none;
 	display: flex;
 	gap: 20px;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+}
+
+nav li:first-child {
+	flex-basis: 100%;
 }
 
 nav ul li {
