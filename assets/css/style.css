@@ -4,6 +4,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	flex-basis: 0;
 }
 
 body {
@@ -22,6 +23,14 @@ main {
 	padding: 20px;
 	border: solid 2px black;
 	border-radius: 20px;
+}
+
+.single {
+	flex-grow: 1;
+}
+
+.double {
+	flex-grow: 2;
 }
 
 nav {
