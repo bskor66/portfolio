@@ -4,6 +4,7 @@
 	--content-padding: 20px;
 	--background: #323232;
 	--text-color: white;
+	--surface-blur: blur(20px);
 	--surface-fallback-1: rgb(34, 193, 195);
 	--surface-gradient-1: linear-gradient(
 		133deg,
@@ -57,10 +58,8 @@ main {
 }
 
 .card {
-	background-color: var(--surface);
 	flex-grow: 1;
 	color: var(--text-color);
-	padding: var(--content-padding);
 	border-radius: var(--card-radius);
 }
 
@@ -77,6 +76,30 @@ main {
 .double {
 	aspect-ratio: 1/2;
 	flex-grow: 2;
+}
+
+.surface-1 {
+	background: var(--surface-fallback-1);
+	background: var(--surface-gradient-1);
+}
+
+.surface-2 {
+	background: var(--surface-fallback-2);
+	background: var(--surface-gradient-2);
+}
+
+.surface-3 {
+	background: var(--surface-fallback-3);
+	background: var(--surface-gradient-3);
+}
+
+.content-wrapper {
+	width: 100%;
+	height: 100%;
+	border-radius: var(--card-radius);
+	padding: var(--content-padding);
+	backdrop-filter: blur(20px);
+	background-color: #ffffff50;
 }
 
 nav {
