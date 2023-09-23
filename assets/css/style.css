@@ -29,3 +29,7 @@ nav li:first-child {
 nav ul li {
 	display: inline-block;
 }
+
+nav a {
+	display: block;
+}
