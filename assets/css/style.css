@@ -2,12 +2,25 @@
 	--spacing: 40px;
 	--card-radius: 20px;
 	--content-padding: 20px;
-	--gradient-fallback: rgb(195, 165, 215);
-	--gradient: linear-gradient(
+	--background: #323232;
+	--text-color: white;
+	--surface-fallback-1: rgb(34, 193, 195);
+	--surface-gradient-1: linear-gradient(
+		133deg,
+		rgba(34, 193, 195, 1) 0%,
+		rgba(253, 187, 45, 1) 100%
+	);
+	--surface-fallback-2: rgb(179, 76, 172);
+	--surface-gradient-2: linear-gradient(
+		133deg,
+		rgba(179, 76, 172, 1) 0%,
+		rgba(188, 151, 195, 1) 100%
+	);
+	--surface-fallback-3: rgb(255, 137, 135);
+	--surface-gradient-3: linear-gradient(
 		117deg,
-		rgba(195, 165, 215, 1) 0%,
-		rgba(240, 107, 107, 1) 50%,
-		rgba(217, 189, 151, 1) 100%
+		rgba(255, 137, 135, 1) 25%,
+		rgba(251, 246, 131, 1) 72%
 	);
 }
 
@@ -21,8 +34,7 @@
 
 body {
 	padding: var(--spacing);
-	background: var(--gradient-fallback);
-	background: var(--gradient);
+	background: var(--background);
 	display: flex;
 	flex-flow: column nowrap;
 	margin: 0 auto;
@@ -45,11 +57,10 @@ main {
 }
 
 .card {
-	background-color: transparent;
+	background-color: var(--surface);
 	flex-grow: 1;
-	color: black;
+	color: var(--text-color);
 	padding: var(--content-padding);
-	border: solid 2px black;
 	border-radius: var(--card-radius);
 }
 
@@ -73,12 +84,6 @@ nav {
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	background-color: transparent;
-	flex-grow: 1;
-	color: black;
-	padding: var(--content-padding);
-	border: solid 2px black;
-	border-radius: var(--card-radius);
 }
 
 nav ul {
