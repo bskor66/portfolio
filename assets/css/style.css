@@ -13,10 +13,12 @@
 }
 
 body {
-	padding: var(--content-padding);
+	padding: var(--spacing);
 	background-color: grey;
 	display: flex;
 	flex-flow: column nowrap;
+	margin: 0 auto;
+	max-width: 1920px;
 	gap: var(--spacing);
 }
 
@@ -41,8 +43,22 @@ main {
 	padding: var(--content-padding);
 	border: solid 2px black;
 	border-radius: var(--card-radius);
-	min-width: 200px;
 	aspect-ratio: 1;
+}
+
+.half {
+	aspect-ratio: 2/1;
+	flex-grow: 0.5;
+}
+
+.single {
+	aspect-ratio: 1;
+	flex-grow: 1;
+}
+
+.double {
+	aspect-ratio: 1/2;
+	flex-grow: 2;
 }
 
 nav {
@@ -79,8 +95,17 @@ nav a {
 	display: block;
 }
 
+@media screen and (max-width: 1200px) {
+	.column {
+		flex-basis: calc(50% - var(--spacing));
+	}
+}
+
 @media screen and (max-width: 768px) {
 	nav li {
+		flex-basis: 100%;
+	}
+	.column {
 		flex-basis: 100%;
 	}
 }
