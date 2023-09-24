@@ -22,7 +22,7 @@
 	--surface-gradient-3: linear-gradient(
 		117deg,
 		rgba(255, 137, 135, 1) 25%,
-		rgba(251, 246, 131, 1) 72%
+		rgb(255, 213, 123) 72%
 	);
 }
 
@@ -132,8 +132,25 @@ nav a {
 	display: block;
 }
 
-.card:hover {
+.card:not(nav):hover {
 	transform: scale(0.95);
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+nav.card {
+	background-size: 200% 200%;
+	animation: gradient 15s ease infinite;
 }
 
 @media screen and (max-width: 1200px) {
