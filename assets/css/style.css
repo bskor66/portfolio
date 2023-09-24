@@ -4,6 +4,7 @@
 	--content-padding: 20px;
 	--background: #323232;
 	--text-color: white;
+	--mono: "Ubuntu Mono", monospace;
 	--surface-blur: blur(20px);
 	--surface-fallback-1: rgb(34, 193, 195);
 	--surface-gradient-1: linear-gradient(
@@ -31,6 +32,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	font-family: var(--mono);
 }
 
 body {
@@ -61,6 +63,15 @@ main {
 	flex-grow: 1;
 	color: var(--text-color);
 	border-radius: var(--card-radius);
+	box-shadow: #272727 10px 10px 10px;
+	border-radius: var(--card-radius);
+	padding: var(--content-padding);
+	transition: 300ms;
+}
+
+.quarter {
+	aspect-ratio: 4/1;
+	flex-grow: 0.25;
 }
 
 .half {
@@ -93,15 +104,6 @@ main {
 	background: var(--surface-gradient-3);
 }
 
-.content-wrapper {
-	width: 100%;
-	height: 100%;
-	border-radius: var(--card-radius);
-	padding: var(--content-padding);
-	backdrop-filter: blur(20px);
-	background-color: #ffffff50;
-}
-
 nav {
 	display: flex;
 	align-items: center;
@@ -128,6 +130,10 @@ nav ul li {
 
 nav a {
 	display: block;
+}
+
+.card:hover {
+	transform: scale(0.95);
 }
 
 @media screen and (max-width: 1200px) {
