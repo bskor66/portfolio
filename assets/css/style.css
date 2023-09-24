@@ -10,7 +10,7 @@
 	--surface-gradient-1: linear-gradient(
 		133deg,
 		rgba(34, 193, 195, 1) 0%,
-		rgba(253, 187, 45, 1) 100%
+		rgb(255, 253, 136) 100%
 	);
 	--surface-fallback-2: rgb(179, 76, 172);
 	--surface-gradient-2: linear-gradient(
@@ -24,6 +24,7 @@
 		rgba(255, 137, 135, 1) 25%,
 		rgb(255, 213, 123) 72%
 	);
+	--surface: #646464;
 }
 
 *,
@@ -64,6 +65,7 @@ main {
 	color: var(--text-color);
 	border-radius: var(--card-radius);
 	box-shadow: #272727 10px 10px 10px;
+	background: var(--surface);
 	border-radius: var(--card-radius);
 	padding: var(--content-padding);
 	transition: 300ms;
@@ -106,9 +108,15 @@ main {
 
 nav {
 	display: flex;
-	align-items: center;
+	align-content: center;
 	justify-content: center;
 	text-align: center;
+}
+
+nav h1 {
+	font-size: 3em;
+	font-weight: 800;
+	line-height: 0;
 }
 
 nav ul {
