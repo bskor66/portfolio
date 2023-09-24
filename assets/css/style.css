@@ -25,7 +25,7 @@
 		rgb(255, 213, 123) 72%
 	);
 	--surface: #646464;
-	--primary: lightcoral;
+	--primary: lightsalmon;
 }
 
 *,
@@ -58,6 +58,7 @@ main {
 	display: flex;
 	flex-flow: column nowrap;
 	flex-grow: 1;
+	flex-basis: calc(25% - var(--spacing));
 	gap: var(--spacing);
 }
 
@@ -69,7 +70,18 @@ main {
 	border-radius: var(--card-radius);
 	padding: var(--content-padding);
 	--box-shadow-color: var(--primary);
-	transition: 500ms ease;
+	transition: 300ms ease;
+	display: flex;
+	flex-flow: column nowrap;
+	gap: var(--content-padding);
+}
+
+h2 {
+	font-size: 3em;
+}
+
+h3 {
+	font-size: ;
 }
 
 .quarter {
@@ -144,9 +156,13 @@ nav a {
 	display: block;
 }
 
-.card:not(nav):hover {
-	transform: scale(0.95);
+.column > .card:not(nav):hover {
+	transform: scale(0.9);
 	box-shadow: var(--box-shadow-color) 0 0 10px 5px;
+}
+
+nav a:hover {
+	color: var(--primary);
 }
 
 @keyframes gradient {
