@@ -2,7 +2,8 @@
 	--spacing: 40px;
 	--card-radius: 20px;
 	--content-padding: 30px;
-	--background: #323232;
+	/* --background: #323232; */
+	--background: rgb(25, 25, 25);
 	--text-color: white;
 	--mono: "Ubuntu Mono", monospace;
 	--surface-blur: blur(20px);
@@ -79,6 +80,7 @@ main {
 
 a {
 	color: var(--text-color);
+	text-decoration: none;
 }
 
 a:hover {
@@ -155,10 +157,6 @@ nav {
 	flex-basis: 100%;
 }
 
-nav a {
-	text-decoration: none;
-}
-
 nav ul {
 	list-style-type: none;
 	display: flex;
@@ -174,6 +172,12 @@ nav li:first-child {
 
 nav ul li {
 	display: inline-block;
+}
+
+.external {
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .column > .card:not(nav):hover {
@@ -193,7 +197,7 @@ nav ul li {
 	}
 }
 
-main .column:first-child section:first-child.card {
+.animate {
 	background-size: 200% 200%;
 	animation: gradient 5s ease infinite;
 }
