@@ -68,7 +68,8 @@ main {
 	display: flex;
 	flex-flow: column nowrap;
 	flex-grow: 1;
-	flex-basis: calc(25% - var(--spacing));
+	/* flex-basis: calc(25% - (2 * var(--spacing))); */
+	flex-basis: 0;
 	gap: var(--spacing);
 }
 
