@@ -110,7 +110,10 @@ h3 {
 }
 
 p,
-ul {
+ul,
+label,
+input,
+textarea {
 	font-size: 1.5rem;
 	line-height: 1.5em;
 }
@@ -168,6 +171,37 @@ ul {
 .card:hover {
 	transform: scale(0.9);
 	box-shadow: var(--box-shadow-color) 0 0 10px 5px;
+}
+
+form {
+	display: flex;
+	flex-flow: column wrap;
+}
+
+textarea {
+	resize: none;
+	padding: var(--card-inner-gap);
+}
+
+input {
+	padding: 0 var(--card-inner-gap) 0;
+}
+
+input,
+textarea,
+message,
+button {
+	border-radius: var(--card-radius);
+	border: none;
+	outline: none;
+}
+
+input:focus {
+	border: none;
+}
+
+button:hover {
+	background-color: var(--primary);
 }
 
 @keyframes gradient {
