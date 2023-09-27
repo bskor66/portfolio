@@ -14,6 +14,8 @@ This repository serves holds the website for my personal portfolio. It was built
 
 Accessible at: <https://bskor66.github.io/portfolio/index.html>
 
+![Screenshot of Website](./assets/images/screenshot.jpg)
+
 ## Authors
 
 Blake Skor
