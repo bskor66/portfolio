@@ -1,65 +1,39 @@
-# Project Title
+# Blake Skor's Portfolio
 
-Simple overview of use/purpose.
+A portfolio to contact me and see my work.
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+This repository serves holds the website for my personal portfolio. It was built entirely from HTML and CSS. It was also an educational experience as one of my first web apps, implementing new skills. It is fully responsive and engaging.
 
 ## Getting Started
 
-### Dependencies
+### Using the Website
 
-- Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-- ex. Windows 10
+- Please turn off your computer's zoom in settings on your monitor for optimal scaling
 
-### Installing
-
-- How/where to download your program
-- Any modifications needed to be made to files/folders
-
-### Executing program
-
-- How to run the program
-- Step-by-step bullets
-
-```
-code blocks for commands
-```
-
-## Help
-
-Any advise for common problems or issues.
-
-```
-command to run if program contains helper info
-```
+Accessible at: <https://bskor66.github.io/portfolio/index.html>
 
 ## Authors
 
-Contributors names and contact info
-
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+Blake Skor
 
 ## Version History
 
-- 0.2
-  - Various bug fixes and optimizations
-  - See [commit change]() or See [release history]()
-- 0.1
+- 1
   - Initial Release
 
 ## License
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+This project is licensed under the MIT License - see the LICENSE file for details
 
 ## Acknowledgments
 
 Inspiration, code snippets, etc.
 
-- [awesome-readme](https://github.com/matiassingers/awesome-readme)
-- [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-- [dbader](https://github.com/dbader/readme-template)
-- [zenorocha](https://gist.github.com/zenorocha/4526327)
-- [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
+- [CSS Gradient](https://cssgradient.io/)
+- [READEME Template](https://gist.github.com/DomPizzie/7a5ff55ffa9081f2de27c315f5018afc)
+- [Normalize CSS](https://github.com/necolas/normalize.css)
+- [Ubuntu Mono Font](https://fonts.google.com/specimen/Ubuntu+Mono)
+- [FontAwesome Icons](https://fontawesome.com/)
+- [Layout Inspiration from Apple Keynote](https://www.digitaltrends.com/wp-content/uploads/2023/09/iphone-15-pro-recap-presentation-screen.jpeg?fit=2548%2C1431&p=1)
